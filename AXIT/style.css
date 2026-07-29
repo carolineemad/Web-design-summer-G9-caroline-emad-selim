@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: black;
+    padding: 20px 80px;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo span{
+    color: orange;
+}
+.nav-links{
+    float: right;
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    overflow: hidden;
+}
+.hero-content{
+    color: white;
+    padding: 100px 80px;
+    float: left;
+    width: 45%;
+}
+.hero-logo{
+    font-size: 60px;
+}
+.hero-logo span{
+    color: orange;
+}
+.hero-content h2{
+    margin: 20px 0;
+    width: 500px;
+    margin-top: 25px;
+}
+.hero-content hr{
+    width: 70px;
+    margin: 20px 0;
+}
+.hero-content p{
+    width: 450px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.hero-content{
+    float: left;
+}
+.form-box{
+    float: right;
+    width: 320px;
+    background-color: white;
+    margin-top: 130px;
+    margin-right: 100px;
+    border-radius: 5px;
+}
+.form-box h3{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+.form-box span{
+    color: orange;
+}
+.form-box form{
+    padding: 30px;
+    padding-bottom: 0;
+}
+.form-box input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    color: black;
+}
+.form-box button{
+    width: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
