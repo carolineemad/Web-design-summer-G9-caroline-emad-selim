@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 90px;
+    margin-left: 260px;
+}
+
+.card{
+    width: 340px;
+    height: 140px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card1{
+    margin-bottom: 140px;
+}
+
+.card1 h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card1 p{
+    width: 220px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.card1 .arrow{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+}
+
+.card4{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card4 .icon{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card4 h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card4 p{
+    width: 220px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.card4 .arrow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+}
+.card1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #22c7a9;
+    border-bottom-left-radius: 25px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card1:hover::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card1:hover h3,
+.card1:hover p,
+.card1:hover .arrow{
+    color: white;
+}
+
+.card1{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.card4{
+    position: relative;
+    overflow: hidden;
+}
+
+.card4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 100%;
+    background: deeppink;
+    transition: .4s;
+}
+
+.card4 .arrow{
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    color: white;
+    z-index: 2;
+    transition: .4s;
+}
+
+.card4:hover::before{
+    right: 0;
+}
+
+.card4:hover .arrow{
+    right: 8px;
+}
